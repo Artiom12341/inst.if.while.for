@@ -1,6 +1,11 @@
 n=eval(input("Dati n="))
 m=eval(input("Dati m="))
-if n%m==0:
-    print("N este o putere a lui m")
-elif n%m!=0:
-    print("N nu este  o putere a lui m")
+k=0
+a=0
+while n>k:
+    a=a+1
+    k=m**a
+    if n==k:
+        print("N este puterea lui m")
+    elif n<k:
+        print("N nu este puterea lui m")
